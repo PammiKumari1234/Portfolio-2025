@@ -1,9 +1,17 @@
-export default function Home() {
-    return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
-        <h1 className="text-4xl font-bold text-blue-600">Welcome to My Portfolio</h1>
-        <p className="mt-4 text-lg text-gray-700">Built with Next.js and Tailwind CSS</p>
-      </div>
-    );
-  }
-  
+import Head from 'next/head';
+import Navbar from './navbar';
+
+const index = () => {
+  return (
+    <div className='min-h-screen bg-gray-100 text-black dark:bg-gray-900 dark:text-white'>
+      <Head>
+        <title>Pammi Kumari - Portfolio</title>
+        <meta name="description" content="pammi-portfolio" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Navbar/>
+    </div>
+  )
+}
+
+export default index
